@@ -1,0 +1,123 @@
+ext {
+    android = [
+
+        buildToolsVersion: '25.0.2',
+
+        minSdkVersion    : 19,
+        compileSdkVersion: 25,
+        targetSdkVersion : 25,
+        versionCode      : 34,
+        versionName      : "2.3.1",
+        resConfigs       : "zh",
+    ]
+
+
+
+
+    C_XIAOMI = [
+            APPLICATIONID : "com.xm_ssc",
+            jpush : [
+                    JPUSH_PKGNAME : "com.xm_ssc",
+                    JPUSH_APPKEY :"7dfd76cb4641ebf99e672fdc",
+                    JPUSH_CHANNEL :"xiaomi"
+            ],
+
+            Bmob : [
+                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+                    CONFIG_ID : "yceIhUUb",
+            ],
+    ]
+    C_QIHU = [
+            APPLICATIONID :"com.sll_ssc",
+            jpush : [
+                    JPUSH_PKGNAME : "com.sll_ssc",
+                    JPUSH_APPKEY :"c0bd4398340efb570e0948f2",
+                    JPUSH_CHANNEL :"qihu"
+            ],
+
+            Bmob : [
+                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+                    CONFIG_ID : "EAXprGGa",
+            ],
+    ]
+//    C_MEIZU = [
+//            APPLICATIONID :"com.mz_kuaisan",
+//            jpush : [
+//                    JPUSH_PKGNAME : "com.mz_kuaisan",
+//                    JPUSH_APPKEY :"e46a33f488e9060c96f598a2",
+//                    JPUSH_CHANNEL :"meizu"
+//            ],
+//
+//            Bmob : [
+//                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+//                    CONFIG_ID : "JEUj5445",
+//            ],
+//    ]
+    C_BAIDU = [
+            APPLICATIONID :"com.bd_ssc",
+            jpush : [
+                    JPUSH_PKGNAME :"com.bd_ssc",
+                    JPUSH_APPKEY :"6b15db28a680ce4de3b4c453",
+                    JPUSH_CHANNEL :"baidu"
+            ],
+
+            Bmob : [
+                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+                    CONFIG_ID : "M3s5o99N",
+            ],
+    ]
+    C_VIVO = [
+            APPLICATIONID :"com.vv_dfssc",
+            jpush : [
+                    JPUSH_PKGNAME :"com.vv_dfssc",
+                    JPUSH_APPKEY :"d7dee93e78a892a450e9cf2b",
+                    JPUSH_CHANNEL :"vivo"
+            ],
+
+            Bmob : [
+                    APP_ID : "6e0cc180d7ea5dd087e414569e96eb23",
+                    CONFIG_ID : "ZN7bf55f",
+            ],
+    ]
+    C_YYB = [
+            APPLICATIONID :"com.yyb_ssc",
+            jpush : [
+                    JPUSH_PKGNAME : "com.yyb_ssc",
+                    JPUSH_APPKEY :"e09c608278f9c0c1671eeffa",
+                    JPUSH_CHANNEL :"yyb"
+            ],
+
+            Bmob : [
+                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+                    CONFIG_ID : "4YvOM227",
+            ],
+    ]
+    C_OPPO = [
+            APPLICATIONID :"com.oo_ssc",
+            jpush : [
+                    JPUSH_PKGNAME : "com.oo_ssc",
+                    JPUSH_APPKEY :"fee85c86fdda9193718c660a",
+                    JPUSH_CHANNEL :"yyb"
+            ],
+
+            Bmob : [
+                    APP_ID : "e0060c2ce7800f801fb6854ad8747a2f",
+                    CONFIG_ID : "OQvdyAAx",
+            ],
+    ]
+
+    CONFIG = C_VIVO
+
+
+    RES = [
+            APP_NAME:"大发时时彩",
+    ]
+
+    SUPPORT_VERSION   = '25.1.1'
+
+    SigningConfig = [
+            StorePassword  : "wbwbwb",
+            keyAlias  : 'mykey',
+            keyPassword :  "wbwbwb",
+    ]
+}

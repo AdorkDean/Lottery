@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/exit_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/lsh_custom_dialog_tv_title" android:background="@color/color_f4f4f4" android:layout_width="fill_parent" android:layout_height="80.0dip" android:text="title" />
+    <TextView android:background="@color/color_d3d3d3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_f4f4f4" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_6b6b6b" android:gravity="center" android:id="@+id/lsh_custom_dialog_tv_cancle" android:clickable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="cancle" android:layout_weight="1.0" />
+        <TextView android:id="@+id/lsh_custom_dialog_tv_line" android:background="@color/color_d3d3d3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#fff76360" android:gravity="center" android:id="@+id/lsh_custom_dialog_tv_confirm" android:clickable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

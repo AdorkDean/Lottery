@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/lsh_update_user_info" android:layout_width="260.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/LSHProductVideoDetailAc_progressBar1" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" style="@style/Universal.Widget.ProgressBar" />
+        <TextView android:textSize="@dimen/textbody_textsize_15sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/LSHProductVideoDetailAc_progressBar1_tv" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在提交数据..." android:layout_below="@+id/LSHProductVideoDetailAc_progressBar1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

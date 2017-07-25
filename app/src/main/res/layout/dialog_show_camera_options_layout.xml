@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_f4f4f4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/bottom_camera_dialog_tv_takephoto" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="拍    照" />
+    <TextView android:background="@color/color_eeeeee" android:layout_width="fill_parent" android:layout_height="@dimen/tv_line_0.5dp" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/bottom_camera_dialog_tv_photo_album" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="从相册选取" />
+    <TextView android:background="@color/color_eeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tv_line_0.5dp" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/bottom_camera_dialog_tv_map_storage" android:background="@color/color_ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="从图库选取" />
+    <TextView android:background="@color/color_eeeeee" android:layout_width="fill_parent" android:layout_height="@dimen/tv_line_0.5dp" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/bottom_camera_dialog_tv_cancel" android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="取    消" />
+</LinearLayout>

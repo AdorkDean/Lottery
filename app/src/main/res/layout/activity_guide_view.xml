@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <Button android:textSize="@dimen/textbody_textsize_15sp" android:textColor="@color/color_ff0000" android:id="@+id/button" android:background="@drawable/icon_guideview_btn" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="75.0dip" android:layout_marginBottom="40.0dip" android:layout_above="@+id/tv_version" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_3699ff" android:id="@+id/tv_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>
