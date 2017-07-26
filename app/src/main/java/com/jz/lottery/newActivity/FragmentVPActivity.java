@@ -6,10 +6,8 @@ package com.jz.lottery.newActivity;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
 
 import com.jz.lottery.R;
 import com.jz.lottery.adapter.FragmentPagerAdapter;
@@ -36,11 +34,6 @@ public class FragmentVPActivity extends BaseActivity implements OnClickListener 
 
     private void initView() {
         this.viewPager = (ViewPager) findViewById(R.id.packpage_vPager);
-        this.viewPager.setOnTouchListener(new OnTouchListener() {
-            public boolean onTouch(View v, MotionEvent event) {
-                return true;
-            }
-        });
         this.mainradiohome = (DrawableCenterButton) findViewById(R.id.main_radio_home);
         this.mainradiozzzs = (DrawableCenterButton) findViewById(R.id.main_radio_zzzs);
         this.mainradiosearch = (DrawableCenterButton) findViewById(R.id.main_radio_search);
@@ -53,20 +46,49 @@ public class FragmentVPActivity extends BaseActivity implements OnClickListener 
         this.viewPager.setAdapter(this.fragmnetpageradapter);
         this.viewPager.setOffscreenPageLimit(4);
         this.viewPager.setCurrentItem(0);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                switch (position){
+                    case 0:
+                        mainradiohome.setChecked(true);
+                        break;
+                    case 1:
+                        mainradiozzzs.setChecked(true);
+                        break;
+                    case 2:
+                        mainradiosearch.setChecked(true);
+                        break;
+                    case 3:
+                        mainradioself.setChecked(true);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.main_radio_home /*2131427425*/:
+            case R.id.main_radio_home:
                 this.viewPager.setCurrentItem(0);
                 break;
-            case R.id.main_radio_zzzs /*2131427426*/:
+            case R.id.main_radio_zzzs:
             this.viewPager.setCurrentItem(1);
                 break;
-            case R.id.main_radio_search /*2131427427*/:
+            case R.id.main_radio_search:
             this.viewPager.setCurrentItem(2);
                 break;
-            case R.id.main_radio_self /*2131427428*/:
+            case R.id.main_radio_self:
             this.viewPager.setCurrentItem(3);
                 break;
             default:

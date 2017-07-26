@@ -21,11 +21,9 @@ import android.view.View;
 
 import com.jz.lottery.R;
 
-import static com.jz.lottery.R.color.color_ff0000;
-
 
 public class SlideSwitchButton extends View {
-    public static final int COLOR_THEME = Color.parseColor("#ff00ee00");
+    public static final int COLOR_THEME = Color.parseColor("#ff666666");
     private static final int RIM_SIZE = 3;
     public static final int SHAPE_CIRCLE = 2;
     public static final int SHAPE_RECT = 1;

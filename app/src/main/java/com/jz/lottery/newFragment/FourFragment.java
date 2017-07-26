@@ -52,12 +52,12 @@ public class FourFragment extends BaseFragment implements OnClickListener {
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.qingchuhuancun /*2131427452*/:
+            case R.id.qingchuhuancun :
                 this.textview_cache.setText("0M");
-                Toast.makeText(getContext(), "\u6e05\u9664\u6210\u529f", 0).show();
-            case R.id.banbengengxin /*2131427454*/:
-                Toast.makeText(getContext(), "\u5df2\u662f\u6700\u65b0\u7248\u672c", 0).show();
-            case R.id.yijianfankui /*2131427456*/:
+                Toast.makeText(getContext(), "\u6e05\u9664\u6210\u529f", Toast.LENGTH_SHORT).show();
+            case R.id.banbengengxin :
+                Toast.makeText(getContext(), "\u5df2\u662f\u6700\u65b0\u7248\u672c", Toast.LENGTH_SHORT).show();
+            case R.id.yijianfankui :
                 startActivity(new Intent(getActivity(), LSHSuggestionFeedBackActivity.class));
             default:
         }

@@ -12,7 +12,6 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog.Builder;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +34,6 @@ public class FirstFragment extends BaseFragment {
 
     class MyWebChromeClient extends WebChromeClient {
 
-        /* renamed from: com.wwp.www.vrcpchaxun.newFragment.FirstFragment.MyWebChromeClient.1 */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ String val$message;
 
@@ -56,7 +54,6 @@ public class FirstFragment extends BaseFragment {
         }
 
         public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
-            Log.d("main", "onJsAlert:" + message);
             FirstFragment.this.getActivity().runOnUiThread(new AnonymousClass1(message));
             result.confirm();
             return true;
@@ -73,26 +70,13 @@ public class FirstFragment extends BaseFragment {
         if (isNetworkConnected(getActivity())) {
             initView();
         } else {
-            Toast.makeText(getActivity(), "\u7f51\u7edc\u4e0d\u53ef\u7528\u8bf7\u68c0\u67e5\u7f51\u7edc\u72b6\u6001", 0).show();
+            Toast.makeText(getActivity(), "\u7f51\u7edc\u4e0d\u53ef\u7528\u8bf7\u68c0\u67e5\u7f51\u7edc\u72b6\u6001", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    public void onResume() {
-        super.onResume();
-        if (isNetworkConnected(getActivity())) {
-            initView();
-        } else {
-            Toast.makeText(getActivity(), "\u7f51\u7edc\u4e0d\u53ef\u7528\u8bf7\u68c0\u67e5\u7f51\u7edc\u72b6\u6001", 0).show();
-        }
-    }
-
-    public void onHiddenChanged(boolean hidden) {
-        super.onHiddenChanged(hidden);
     }
 
     public boolean isNetworkConnected(Context context) {
         if (context != null) {
-            NetworkInfo mNetworkInfo = ((ConnectivityManager) context.getSystemService("connectivity")).getActiveNetworkInfo();
+            NetworkInfo mNetworkInfo = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
             if (mNetworkInfo != null) {
                 return mNetworkInfo.isAvailable();
             }

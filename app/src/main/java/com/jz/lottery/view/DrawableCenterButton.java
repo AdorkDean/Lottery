@@ -7,10 +7,10 @@ package com.jz.lottery.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.AppCompatRadioButton;
 import android.util.AttributeSet;
-import android.widget.RadioButton;
 
-public class DrawableCenterButton extends RadioButton {
+public class DrawableCenterButton extends AppCompatRadioButton {
     public DrawableCenterButton(Context context) {
         super(context);
     }

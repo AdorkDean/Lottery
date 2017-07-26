@@ -45,10 +45,7 @@ public class ThreeFragment extends BaseFragment {
     View view;
 
     public class ListAdapter extends BaseAdapter<entity> {
-        private ArrayList<entity> mData;
-        private Context mcontext;
 
-        /* renamed from: com.wwp.www.vrcpchaxun.newFragment.ThreeFragment.ListAdapter.1 */
         class AnonymousClass1 implements OnClickListener {
             final /* synthetic */ entity val$s;
 
@@ -65,8 +62,6 @@ public class ThreeFragment extends BaseFragment {
 
         public ListAdapter(ArrayList<entity> mData, Context mcontext) {
             super(mData, mcontext, R.layout.faxian_item);
-            this.mcontext = mcontext;
-            this.mData = mData;
         }
 
         public void setView(ViewHolder vh, entity s, int position) {
@@ -113,7 +108,6 @@ public class ThreeFragment extends BaseFragment {
         this.requestParams = new RequestParams("http://www.wozhongla.com/news/API/JSON/list.php?row=80&tid=910");
         this.cancelable = x.http().get(this.requestParams, new Callback.CommonCallback<String>() {
             public void onSuccess(String result) {
-                System.out.println("WWW---" + result);
                 ThreeFragment.this.entities = (ArrayList) ThreeFragment.getObjectList(result, entity.class);
                 if (ThreeFragment.this.entities != null && ThreeFragment.this.entities.size() > 0) {
                     PreferencesObjectUtil.saveObject(ThreeFragment.this.entities, "data", ThreeFragment.this.getActivity());
@@ -128,7 +122,6 @@ public class ThreeFragment extends BaseFragment {
 
             public void onError(Throwable ex, boolean isOnCallback) {
                 Toast.makeText(ThreeFragment.this.getActivity(), "\u7f51\u7edc\u4e0d\u53ef\u7528\u8bf7\u68c0\u67e5\u7f51\u7edc\u72b6\u6001", Toast.LENGTH_SHORT).show();
-                System.out.println("WWW---" + ex.toString());
             }
 
             public void onCancelled(CancelledException cex) {
